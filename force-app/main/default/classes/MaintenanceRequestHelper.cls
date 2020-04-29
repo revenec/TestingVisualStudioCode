@@ -14,6 +14,8 @@ public with sharing class MaintenanceRequestHelper
         {
             mapCaseIdToPreviousCaseValues.put(caseOld.Id, caseOld);
         }
+
+        System.debug('Test level 22');
         for(Case caseUse : lstNewCases)
         {
             System.debug('Test example');
