@@ -8,7 +8,8 @@ public with sharing class MaintenanceRequestHelper
         Map<Id,Case> mapCaseIdToCasesToInsert = new Map<Id,Case>();
         Case caseToAdd;
         Set<String> setCasesIds = new Set<String>();
-
+        
+        System.debug('Login details test for merge classes');
         //Get the previous values
         for(Case caseOld : lstPreviousCases)
         {
@@ -33,7 +34,7 @@ public with sharing class MaintenanceRequestHelper
                 setCasesIds.add(caseUse.Id);
             }
         }
-
+        
         //Get the due date for life cyrcle
         for(Work_Part__c workPart : [SELECT Id, Maintenance_Request__c, Equipment__r.Maintenance_Cycle__c 
                                     FROM Work_Part__c 
