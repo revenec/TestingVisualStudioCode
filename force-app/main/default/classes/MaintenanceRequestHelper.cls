@@ -16,7 +16,7 @@ public with sharing class MaintenanceRequestHelper
         }
         for(Case caseUse : lstNewCases)
         {
-            
+            System.debug('Test example');
             if(setValidTypes.contains(caseUse.Type) && 
                caseUse.Status.equals('Closed') && 
                mapCaseIdToPreviousCaseValues.get(caseUse.Id) != null &&
