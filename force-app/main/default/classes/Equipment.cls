@@ -58,9 +58,6 @@ public class Equipment {
 			}
 		} while (depth > 0 && parser.nextToken() != null);
 	}
-	
-
-
 
 
     private static List<Equipment> arrayOfEquipment(System.JSONParser p) {
@@ -72,5 +69,8 @@ public class Equipment {
         return res;
     }
 
-
+	public String getx_id()
+	{
+		return this.x_id;
+	}
 }
